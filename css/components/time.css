@@ -1,0 +1,13 @@
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.time__display {
+  font-size: 32px;
+  color: tomato;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}

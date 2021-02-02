@@ -1,0 +1,14 @@
+@import "reset.css";
+@import "components/time.css";
+
+body {
+  background-color: linear-gradient(
+    to right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+}
