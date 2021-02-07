@@ -1,4 +1,4 @@
-const btn = document.querySelectorAll(".btn"),
+const mainBtn = document.querySelectorAll(".btn__main"),
   btnDisplay = document.querySelectorAll(".btn__display");
 
 // function paintBtnBox() {
@@ -8,31 +8,27 @@ const btn = document.querySelectorAll(".btn"),
 //   btn.appendChild(span);
 // }
 
-function createDisplay() {
-  const display = document.createElement("span");
-}
-
 function handleClick(event) {
   event.preventDefault();
   const displayClassList = this.nextElementSibling.classList,
-    btnClassList = this.classList;
+    mainBtnClassList = this.classList;
 
   if (displayClassList.contains("showing") === true) {
-    btnClassList.remove("move-left");
-    btnClassList.add("move-left-back");
+    mainBtnClassList.remove("move-left");
+    mainBtnClassList.add("move-left-back");
     displayClassList.remove("showing");
     displayClassList.add("hiding");
   } else {
-    btnClassList.add("move-left");
-    btnClassList.remove("move-left-back");
+    mainBtnClassList.add("move-left");
+    mainBtnClassList.remove("move-left-back");
     displayClassList.add("showing");
     displayClassList.remove("hiding");
   }
 }
 
 function init() {
-  for (let i = 0; i < btn.length; i++) {
-    btn[i].addEventListener("click", handleClick);
+  for (let i = 0; i < mainBtn.length; i++) {
+    mainBtn[i].addEventListener("click", handleClick);
   }
 }
 

@@ -61,6 +61,7 @@ main {
 
 @keyframes fadeIn {
   from {
+    opacity: 0;
     transform: none;
   }
   to {
@@ -104,6 +105,7 @@ main {
     transform: rotateZ(360deg);
   }
 }
+
 .move-left .btn-icon {
   animation: spin 2s linear infinite 1.5s;
 }

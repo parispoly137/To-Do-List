@@ -4,7 +4,7 @@
 /* Components */
 @import "components/time.css";
 @import "components/main-Button.css";
-@import "components/side-button.css";
+@import "components/sidebar.css";
 
 @keyframes gradient {
   0% {

@@ -15,33 +15,65 @@
       </div>
   
       <div class="main__column main__routine">
-        <button class="btn btn__routine">
+        <button class="btn btn__main btn__routine">
           <i class="fas fa-redo-alt btn-icon"></i>
         </button>
         <div class="btn__display"></div>
       </div>
 
       <div class="main__column main__toDos">
-        <button class="btn btn__toDos">
+        <button class="btn btn__main btn__toDos">
           <i class="fas fa-list-ul btn-icon"></i>
         </button>
         <div class="btn__display"></div>
       </div>  
 
-      <div class="side__container">
-        <div class="side__container__column"></div>
-        <div class="side__container__column"></div>
-        <div class="side__container__column"></div>
-        <div class="side__container__column"></div>
+      <div class="sidebar">
+        <div class="sidebar__container">
+          <div class="sidebar__container__column">
+            <button class="btn btn__side btn__arrow">
+              <i class="fas fa-angle-double-left"></i>
+            </button>
+          </div>
+          <div class="sidebar__container__column">
+            <button class="btn btn__side btn__routine about__routine">
+              <i class="fas fa-redo-alt btn-icon"></i>
+            </button>
+          </div>
+          <div class="sidebar__container__column">
+            <button class="btn btn__side btn__toDos about__toDos">
+              <i class="fas fa-list-ul btn-icon"></i>
+            </button>
+          </div>
+          <div class="sidebar__container__column">
+            <button class="btn btn__side btn__setting about__setting">
+              <i class="fas fa-cog btn-icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="sidebar__whiteBox">
+          <div class="sidebar__whiteBox__container">
+          <div class="sidebar__whiteBox__column about__routine">
+            <h1 class="sidebar__whiteBox__column-title">Daily Routine</h1>
+          </div>
+          <div class="sidebar__whiteBox__column about__toDos">
+            <h1 class="sidebar__whiteBox__column-title">To Do List</h1>
+          </div>
+          <div class="sidebar__whiteBox__column about__setting">
+            <h1 class="sidebar__whiteBox__column-title">Setting</h1>
+          </div>
+        </div>
+        </div>
       </div>
-    </main>
+      </main>
     
 
 
 
   
   <script src="js/time.js"></script>
-  <script src="js/button.js"></script>
+  <script src="js/main-button.js"></script>
+  <script src="js/side-button.js"></script>
   <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
 </html>

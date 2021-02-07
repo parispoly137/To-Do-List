@@ -1,0 +1,119 @@
+.sidebar {
+  position: absolute;
+  right: -560px;
+  bottom: -80px;
+  /* right: -600px; */
+  /* bottom: 83px; */
+}
+
+.sidebar__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: relative;
+  width: 600px;
+  height: 60px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.sidebar__container__column:first-child {
+  position: absolute;
+  left: 0;
+}
+
+.sidebar__container__column:nth-child(3) {
+  margin: 0 130px;
+}
+
+.sidebar__container__column:last-child {
+  margin-right: 55px;
+}
+
+.btn__arrow {
+  width: 40px;
+  height: 60px;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.visible {
+  visibility: visible;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.btn__side-clicked {
+  border: 3px solid white;
+  font-size: 20px;
+}
+
+/* side bar's white box */
+
+.sidebar__whiteBox {
+  position: absolute;
+  left: 42px;
+  top: 62px;
+
+  width: 558px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom-left-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  opacity: 0;
+}
+
+.sidebar__whiteBox__container {
+  position: relative;
+}
+
+.sidebar__whiteBox__column {
+  position: absolute;
+  visibility: hidden;
+}
+
+.show-contents {
+  visibility: visible;
+}
+
+/* side bar's white box contents */
+
+.sidebar__whiteBox__column h1 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+/* sliding effect */
+
+@keyframes sliding {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-560px);
+  }
+}
+
+@keyframes sliding-back {
+  from {
+    transform: translateX(-560px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.sliding {
+  animation: sliding 0.8s ease-in-out forwards;
+}
+
+.sliding-back {
+  animation: sliding-back 0.8s ease-in-out forwards;
+}
