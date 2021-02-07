@@ -6,24 +6,42 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <img class="background" src="#">
+  <body>    
+
+
     <main>
       <div class="time">
-      <span class="time__display"></span>
+        <span class="time__display"></span>
+      </div>
+  
+      <div class="main__column main__routine">
+        <button class="btn btn__routine">
+          <i class="fas fa-redo-alt btn-icon"></i>
+        </button>
+        <div class="btn__display"></div>
       </div>
 
-      <div class="name">
-        <form class="name__column">
-          <input type="text" placeholder="What's your name?">
-        </form>
-      </div>
+      <div class="main__column main__toDos">
+        <button class="btn btn__toDos">
+          <i class="fas fa-list-ul btn-icon"></i>
+        </button>
+        <div class="btn__display"></div>
+      </div>  
 
+      <div class="side__container">
+        <div class="side__container__column"></div>
+        <div class="side__container__column"></div>
+        <div class="side__container__column"></div>
+        <div class="side__container__column"></div>
+      </div>
     </main>
     
+
+
+
   
   <script src="js/time.js"></script>
-  <script src="js/background.js"></script>
-  <script src="js/test.js"></script>
+  <script src="js/button.js"></script>
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
 </html>
